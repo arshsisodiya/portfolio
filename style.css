@@ -1,17 +1,46 @@
+@media (max-width: 740px){
+  
+}
+
 body{
   background: #031321;
   font-family: sans-serif;
+}
+.logo
+{
+  color:#2196f3;
+  margin-left: -4%;
+  margin-top: -50px;
+
+  font-weight: bold;
+  display: block;
+  width: 20%;
+  padding-left: 20px;
+  height:40px;
+  font-size: 30px;
+  overflow: hidden;
+
+}
+.logo:hover
+{
+  color: red;
+  background: #2196f3;
+  box-shadow: 0 0 50px #2196f3, 0 0 10px #2196f3,
+  0 0 100px #2196f3;
+  transition-delay: 0.05s;
+  transition: .5s;
+  cursor: hand;
 }
 #menu{
   margin: ;
   padding: ;
   display: block;
-  justify-content: right;
   align-items: right;
   text-align:right;
   min-height: 100vh;
   background: #031321;
   font-family: sans-serif;
+
 }
 a{
   position: relative;
