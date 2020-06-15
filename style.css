@@ -16,7 +16,7 @@ body{
   overflow: visible;
 
 }
-.logo:hover
+/* .logo:hover
 {
   color: red;
   background: #2196f3;
@@ -24,7 +24,7 @@ body{
   transition-delay: 0.05s;
   transition: .5s;
   cursor: hand;
-}
+} */
 #menu{
   margin: ;
   padding: ;
