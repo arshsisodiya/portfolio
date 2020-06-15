@@ -130,7 +130,7 @@ font-family: sans-serif;
 font-weight: bolder;
 margin-left: %;
 margin-right: 40%;
-margin-bottom: 0%;
+
 margin-top: 20%;
 position: relative;
 display: inline-block;
@@ -214,7 +214,7 @@ b:hover div_me:nth-child(4)
  transition: 1s;
  transition-delay: 0.75s;
 }
-#intro_2
+#blow_middle
 {
   color: #255784;
   text-shadow:none;
@@ -225,14 +225,15 @@ b:hover div_me:nth-child(4)
 }
 /* This is Copy */
 #contact {
-  padding: 100px 10px 100px 10px;
+  padding: 10px 10px 1px 1px;
   background-color: inherit;
+  margin-top: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: auto%;
+  width: 100%;
 }
 .contact-section-header {
   font-size: 20px;
@@ -240,7 +241,7 @@ b:hover div_me:nth-child(4)
   margin-bottom: 10px;
 }
 .contact-links {
-  margin-top: 20px;
+  margin-top:10px;
 }
 .profile-link,
 #profile-link {
