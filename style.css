@@ -131,16 +131,16 @@ a:hover span:nth-child(4)
 }
 */
 /* Trying Something New Here */
-b {
+middletext {
   color: red;
   font-family: sans-serif;
   font-weight: bolder;
-  margin-left: %;
+
   margin-right: 40%;
   margin-top: 20%;
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
+  padding-left: 30px;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-decoration: none;
@@ -149,7 +149,7 @@ b {
   transition: 2s;
 }
 
-b:hover {
+middletext:hover {
   color: purple;
   background: none;
   box-shadow: none;
@@ -162,7 +162,7 @@ b:hover {
   display: block;
 }
 
-b div_me:nth-child(1) {
+middletext div_me:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -170,12 +170,12 @@ b div_me:nth-child(1) {
   background: linear-gradient(90deg, transparent, #2196f3)
 }
 
-b:hover div_me:nth-child(1) {
+middletext:hover div_me:nth-child(1) {
   left: 100%;
   transition: 1s;
 }
 
-b div_me:nth-child(3) {
+middletext div_me:nth-child(3) {
   bottom: 0%;
   right: -100%;
   width: 100%;
@@ -183,13 +183,13 @@ b div_me:nth-child(3) {
   background: linear-gradient(270deg, transparent, #2196f3);
 }
 
-b:hover div_me:nth-child(3) {
+middletext:hover div_me:nth-child(3) {
   right: 100%;
   transition: 1s;
   transition-delay: 0.5s;
 }
 
-b div_me:nth-child(2) {
+middletext div_me:nth-child(2) {
   top: -100%;
   right: 0%;
   width: 2px;
@@ -197,13 +197,13 @@ b div_me:nth-child(2) {
   background: linear-gradient(180deg, transparent, #2196f3);
 }
 
-b:hover div_me:nth-child(2) {
+middletext:hover div_me:nth-child(2) {
   top: 100%;
   transition: 1s;
   transition-delay: 0.25s;
 }
 
-b div_me:nth-child(4) {
+middletext div_me:nth-child(4) {
   bottom: -100%;
   left: 0%;
   width: 2px;
@@ -211,7 +211,7 @@ b div_me:nth-child(4) {
   background: linear-gradient(360deg, transparent, #2196f3);
 }
 
-b:hover div_me:nth-child(4) {
+middletext:hover div_me:nth-child(4) {
   bottom: 100%;
   transition: 1s;
   transition-delay: 0.75s;
@@ -223,7 +223,7 @@ b:hover div_me:nth-child(4) {
   font-family: sans-serif;
   font-size: 30px;
   font-weight: bold;
-  margin-top: -6px;
+  margin-top:-6px;
 }
 
 /* This is Copy */
@@ -262,6 +262,9 @@ a:hover#profile-link {
   transition: all 200ms linear 0ms;
 }
 
+
+
+
 /* Try This For Logo */
 .logo {
   float: left;
@@ -280,6 +283,11 @@ a:hover#profile-link {
   letter-spacing: 4px;
   overflow: hidden;
 }
+
+
+
+
+
 
 logo:hover {
   color: purple;
@@ -349,4 +357,5 @@ logo:hover logo:nth-child(4) {
   bottom: 100%;
   transition: 1s;
   transition-delay: 0.75s;
+
 }
