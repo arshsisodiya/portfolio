@@ -1,12 +1,25 @@
+
+
 body {
   background: #031321;
   font-family: sans-serif;
 }
 
+@media (max-width: 1080px) {
+  logo {
+    text-transform: lowercase;
+  }
+
+}
+
+
+
+
+
+/*
 .logo {
+float: left;
   color: #2196f3;
-  margin-left: -70px;
-  margin-top: -40px;
   font-weight: bold;
   display: block;
   width: 20%;
@@ -15,8 +28,7 @@ body {
   letter-spacing: 4px;
   overflow: visible;
 }
-
-/* .logo:hover
+.logo:hover
 {
   color: red;
   background: #2196f3;
@@ -25,18 +37,17 @@ body {
   transition: .5s;
   cursor: hand;
 } */
-#menu {
-  margin: ;
-  padding: ;
+.menu {
+  background-color: none;
   display: block;
   align-items: right;
   text-align: right;
-  min-height: 100vh;
-  background: #031321;
+  min-height: ;
+  background: #031321
   font-family: sans-serif;
 }
 
-a {
+.menu a {
   position: relative;
   display: inline-block;
   padding: 15px 30px;
@@ -49,7 +60,7 @@ a {
   transition: 0.5s;
 }
 
-a:hover {
+.menu a:hover {
   color: #255784;
   background: #2196f3;
   box-shadow: 0 0 5px #2196f3, 0 0 10px #2196f3,
@@ -146,7 +157,7 @@ b:hover {
   cursor: hand;
 }
 
-#middle div_me {
+.middle div_me {
   position: absolute;
   display: block;
 }
@@ -219,9 +230,8 @@ b:hover div_me:nth-child(4) {
 #contact {
   padding: 10px 10px 1px 1px;
   background-color: inherit;
-  margin-top: 100%;
-  display: flex;
-  flex-direction: row;
+  margin-top:   ;
+  display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -246,49 +256,47 @@ b:hover div_me:nth-child(4) {
   text-align: center;
 }
 
-/* a:hover.profile-link,
+ a:hover.profile-link,
 a:hover#profile-link {
   color: #00ba96;
   transition: all 200ms linear 0ms;
 }
-*/
+
 /* Try This For Logo */
-c {
+.logo {
+  float: left;
+  padding-left: 10px;
   font-family: sans-serif;
   font-weight: bolder;
   position: relative;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-decoration: none;
-  font-size: 20px;
   overflow: hidden;
-  transition: 3s;
+  transition: 1s;
   color: #2196f3;
-  margin-left: -70px;
-  margin-top: -40px;
-  font-weight: bold;
-  display: block;
-  width: 20%;
-  height: 40px;
+
   font-size: 20px;
   letter-spacing: 4px;
   overflow: hidden;
 }
 
-c:hover {
+logo:hover {
   color: purple;
   background: none;
   box-shadow: none;
-  transition-delay: 0.05s;
+  transition-delay: 2s;
+  transition: 2s;
   cursor: hand;
 }
 
-#c logo {
+
+logo logo {
   position: absolute;
   display: flex;
 }
 
-c logo:nth-child(1) {
+logo logo:nth-child(1) {
   top: 0px;
   left: -100%;
   width: 100%;
@@ -296,12 +304,12 @@ c logo:nth-child(1) {
   background: linear-gradient(90deg, transparent, #2196f3)
 }
 
-c:hover logo:nth-child(1) {
+logo:hover logo:nth-child(1) {
   left: 100%;
   transition: 1s;
 }
 
-c logo:nth-child(3) {
+logo logo:nth-child(3) {
   bottom: 0%;
   right: -100%;
   width: 100%;
@@ -309,13 +317,13 @@ c logo:nth-child(3) {
   background: linear-gradient(270deg, transparent, #2196f3);
 }
 
-c:hover logo:nth-child(3) {
+logo:hover logo:nth-child(3) {
   right: 100%;
   transition: 1s;
   transition-delay: 0.5s;
 }
 
-c logo:nth-child(2) {
+logo logo:nth-child(2) {
   top: -100%;
   right: 0%;
   width: 2px;
@@ -323,21 +331,21 @@ c logo:nth-child(2) {
   background: linear-gradient(180deg, transparent, #2196f3);
 }
 
-c:hover logo:nth-child(2) {
+logo:hover logo:nth-child(2) {
   top: 100%;
   transition: 1s;
   transition-delay: 0.25s;
 }
 
-c logo:nth-child(4) {
+logo logo:nth-child(4) {
   bottom: -100%;
   left: 0%;
-  width: 10px;
+  width: 2px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #2196f3);
 }
 
-c:hover logo:nth-child(4) {
+logo:hover logo:nth-child(4) {
   bottom: 100%;
   transition: 1s;
   transition-delay: 0.75s;
