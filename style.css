@@ -1,5 +1,3 @@
-
-
 body {
   background: #031321;
   font-family: sans-serif;
@@ -9,12 +7,7 @@ body {
   logo {
     text-transform: lowercase;
   }
-
 }
-
-
-
-
 
 /*
 .logo {
@@ -43,8 +36,7 @@ float: left;
   align-items: right;
   text-align: right;
   min-height: ;
-  background: #031321
-  font-family: sans-serif;
+  background: #031321 font-family: sans-serif;
 }
 
 .menu a {
@@ -135,7 +127,6 @@ middletext {
   color: red;
   font-family: sans-serif;
   font-weight: bolder;
-
   margin-right: 40%;
   margin-top: 20%;
   position: relative;
@@ -223,14 +214,14 @@ middletext:hover div_me:nth-child(4) {
   font-family: sans-serif;
   font-size: 30px;
   font-weight: bold;
-  margin-top:-6px;
+  margin-top: -6px;
 }
 
 /* This is Copy */
 #contact {
   padding: 10px 10px 1px 1px;
   background-color: inherit;
-  margin-top:   ;
+  margin-top: ;
   display: block;
   justify-content: center;
   align-items: center;
@@ -256,14 +247,11 @@ middletext:hover div_me:nth-child(4) {
   text-align: center;
 }
 
- a:hover.profile-link,
+a:hover.profile-link,
 a:hover#profile-link {
   color: #00ba96;
   transition: all 200ms linear 0ms;
 }
-
-
-
 
 /* Try This For Logo */
 .logo {
@@ -278,16 +266,10 @@ a:hover#profile-link {
   overflow: hidden;
   transition: 1s;
   color: #2196f3;
-
   font-size: 20px;
   letter-spacing: 4px;
   overflow: hidden;
 }
-
-
-
-
-
 
 logo:hover {
   color: purple;
@@ -297,7 +279,6 @@ logo:hover {
   transition: 2s;
   cursor: hand;
 }
-
 
 logo logo {
   position: absolute;
@@ -357,5 +338,120 @@ logo:hover logo:nth-child(4) {
   bottom: 100%;
   transition: 1s;
   transition-delay: 0.75s;
-
 }
+
+/* For Footer*/
+footer {
+  background: #0e5282;
+  padding: 30 10px;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.footer_logo {
+  width: auto;
+  font-family: sans-serif;
+  font-weight: bolder;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 1s;
+  color: skyblue;
+  font-size: 20px;
+  letter-spacing: 4px;
+  overflow: hidden;
+}
+
+.btnlogo {
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+  background: none;
+  border: 4px solid;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+.btnlogo::before, .btnlogo::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: #353b48;
+  transform: skewX(50deg);
+  transition: .4s linear;
+}
+
+.btnlogo::before {
+  top: -4px;
+  left: 10%;
+}
+
+.btnlogo::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.btnlogo:hover::before {
+  left: 80%;
+}
+
+.btnlogo:hover::after {
+  right: 80%;
+}
+
+.social-media {
+  margin: 2px 0;
+}
+
+.social-media a {
+  color: #001a21;
+  margin-right: 25px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.social-media a:hover {
+  color: #fc5c65;
+}
+
+@media screen and (max-width:960px) {
+  .footer-container {
+    max-width: 600px;
+  }
+
+  .right-col {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .left-col {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .btn {
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* For business Card */
