@@ -3,33 +3,6 @@ body {
   font-family: sans-serif;
 }
 
-@media (max-width: 1080px) {
-  logo {
-    text-transform: lowercase;
-  }
-}
-
-/*
-.logo {
-float: left;
-  color: #2196f3;
-  font-weight: bold;
-  display: block;
-  width: 20%;
-  height: 40px;
-  font-size: 20px;
-  letter-spacing: 4px;
-  overflow: visible;
-}
-.logo:hover
-{
-  color: red;
-  background: #2196f3;
-  box-shadow:
-  transition-delay: 0.05s;
-  transition: .5s;
-  cursor: hand;
-} */
 .menu {
   background-color: none;
   display: block;
@@ -42,7 +15,7 @@ float: left;
 .menu a {
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 10px 20px;
   color: #2196f3;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -60,75 +33,13 @@ float: left;
   transition-delay: 0.05s;
 }
 
-/* No need of this much fancy Things
-span
-{
-  position: absolute;
-  display: block;
-}
-a span:nth-child(1)
-{
- top: 0;
- left: -100%;
- width: 100%;
- height: 2px;
- background: linear-gradient(90deg, transparent,#2196f3)
-}
-a:hover span:nth-child(1)
-{
- left: 100%;
- transition: 1s;
-}
-a span:nth-child(3)
-{
- bottom: 0%;
- right:-100%;
- width: 100%;
- height: 2px;
- background: linear-gradient(270deg,transparent,#2196f3);
-}
-a:hover span:nth-child(3)
-{
- right:  100%;
- transition: 1s;
- transition-delay:0.5s;
-}
-a span:nth-child(2)
-{
- top: -100%;
- right: 0%;
- width: 2px;
- height: 100%;
- background: linear-gradient(180deg, transparent,#2196f3);
-}
-a:hover span:nth-child(2)
-{
- top: 100%;
- transition: 1s;
- transition-delay: 0.25s;
-}
-a span:nth-child(4)
-{
- bottom: -100%;
- left: 0%;
- width: 2px;
- height: 100%;
- background: linear-gradient(360deg, transparent,#2196f3);
-}
-a:hover span:nth-child(4)
-{
- bottom:100%;
- transition: 1s;
- transition-delay: 0.75s;
-}
-*/
-/* Trying Something New Here */
+
 middletext {
   color: red;
   font-family: sans-serif;
   font-weight: bolder;
-  margin-right: 40%;
-  margin-top: 20%;
+  margin-right: 50%;
+  margin-top: 15%;
   position: relative;
   display: inline-block;
   padding-left: 30px;
@@ -217,43 +128,7 @@ middletext:hover div_me:nth-child(4) {
   margin-top: -6px;
 }
 
-/* This is Copy */
-#contact {
-  padding: 10px 10px 1px 1px;
-  background-color: inherit;
-  margin-top: ;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-
-.contact-section-header {
-  font-size: 20px;
-  color: #cfcfcf;
-  margin-bottom: 10px;
-}
-
-.contact-links {
-  margin-top: 10px;
-}
-
-.profile-link,
-#profile-link {
-  margin: 20px;
-  color: #cfcfcf;
-  text-decoration: none;
-  text-align: center;
-}
-
-a:hover.profile-link,
-a:hover#profile-link {
-  color: #00ba96;
-  transition: all 200ms linear 0ms;
-}
-
-/* Try This For Logo */
+/* CSS For Logo */
 .logo {
   float: left;
   padding-left: 10px;
@@ -343,21 +218,68 @@ logo:hover logo:nth-child(4) {
 /* For Footer*/
 footer {
   background: #0e5282;
-  padding: 30 10px;
+  padding-top: 6px;
+  padding-bottom: 40px;
 }
 
 .footer-container {
   max-width: 1300px;
-  margin: auto;
+  margin: auto  ;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
 }
+/* for fliping the name card */
 
+.business-card{
+
+  width: 400px;
+  font-weight: bolder;
+  position: relative;
+}
+
+
+.front,.back{
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 1s linear;
+}
+
+.front{
+
+  padding: 0;
+  transform: perspective(600px) rotateX(180deg);
+}
+.back{
+  padding: 0;
+
+  }
+.front::before,.front::after{
+  content: "";
+  position: absolute;
+  right: 100px;
+}
+
+
+
+.front h2{
+  text-transform: uppercase;
+
+}
+
+
+.business-card-active .front{
+  transform: perspective(600px) rotateX(0deg);
+}
+.business-card-active .back{
+  transform: perspective(600px) rotateX(-180deg);
+}
 .footer_logo {
-  width: auto;
   font-family: sans-serif;
   font-weight: bolder;
   position: relative;
@@ -368,22 +290,19 @@ footer {
   transition: 1s;
   color: skyblue;
   font-size: 20px;
-  letter-spacing: 4px;
   overflow: hidden;
 }
 
 .btnlogo {
   width: 300px;
-  height: auto;
-  margin-top: 20px;
+  height: ;
   background: none;
   border: 4px solid;
   color: white;
   font-weight: bolder;
   text-align: center;
   cursor: pointer;
-  font-size: 16px;
-  position: relative;
+  position: absolute;
 }
 
 .btnlogo::before, .btnlogo::after {
@@ -453,5 +372,15 @@ footer {
     margin-top: 20px;
   }
 }
+.rights{
 
+       margin-left:38%;
+
+}
+.rights:hover{
+  color: red;
+  transition-delay: 1s;
+  transition:1s;
+  cursor: hand;
+}
 /* For business Card */
