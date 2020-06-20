@@ -2,11 +2,14 @@
 <meta charset="utf-8">
 
 <head>
+  <title> Arsh Sisodiya personal portfolio </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://kit.fontawesome.com/15f48457a1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -24,8 +27,8 @@
         <logo> </logo>
         <logo> </logo>
         <logo> </logo>
-        <logo> </logo> <span>
-          Arsh Sisodiya
+        <logo> </logo> 
+        Arsh Sisodiya
     </h2 </logo>
   </div>
 
@@ -43,13 +46,30 @@
       <p id="blow_middle"> Kind of a Developer </p>
     </middletext>
   </div>
-<br> <br> <br> <br><br> <br><br> <br>
+  <br> <br> <br> <br><br> <br><br> <br>
   <footer>
     <div class="footer-container">
       <div class="left-col">
-        <div class="btnlogo">
-          <h2 class="footer_logo"> ARSH SISODIYA </h2>
+        <div class="business-card middle">
+          <div class="front">
+            <div class="btnlogo">
+            <h2 class="footer_logo">Bhagchand Meena</h2>
+
+          </div>
+
+          </div>
+          <div class="back">
+            <div class="btnlogo">
+            <h2 class="footer_logo">Arsh Sisodiya</h2>
+          </div>
         </div>
+      </div>
+
+        <script>
+          $(".business-card").click(function(){
+            $(".business-card").toggleClass("business-card-active");
+          });
+        </script>
       </div>
 
 
@@ -62,7 +82,9 @@
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
-    </footer>
+    <Span class="rights"> © 2020 Created By Arsh Sisodiya All Rights Reserved. </span>
+  </footer>
+
 
 
 </body>
